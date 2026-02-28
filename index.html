@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE BEST SITE</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Крутые картинки</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    header {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #FFD700;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #333;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    footer {
+      background-color: #222;
+      text-align: center;
+      padding: 15px;
+      font-size: 1em;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-    <h1>The best site</h1>
+  <header>
+    <h1>Крутые картинки</h1>
+  </header>
+  <div class="gallery">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="nature1" />
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="nature2" />
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="nature3" />
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1549887534-7c680849239b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="nature4" />
+    </div>
+    <!-- Можно добавить больше картинок по желанию -->
+  </div>
+  <footer>
+    &copy; 2024 Мой сайт с крутыми картинками
+  </footer>
 </body>
 </html>
